@@ -14,6 +14,29 @@
 		E8EA5CBB277F0DE700793DB2 /* HangagubbeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CBA277F0DE700793DB2 /* HangagubbeTests.swift */; };
 		E8EA5CC5277F0DE700793DB2 /* HangagubbeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CC4277F0DE700793DB2 /* HangagubbeUITests.swift */; };
 		E8EA5CC7277F0DE700793DB2 /* HangagubbeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CC6277F0DE700793DB2 /* HangagubbeUITestsLaunchTests.swift */; };
+		E8EA5CD8277F0FA200793DB2 /* PlatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CD7277F0FA200793DB2 /* PlatformView.swift */; };
+		E8EA5CDA277F0FC600793DB2 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CD9277F0FC600793DB2 /* GameOverView.swift */; };
+		E8EA5CDC277F11D800793DB2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CDB277F11D800793DB2 /* GameView.swift */; };
+		E8EA5CDE277F121700793DB2 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CDD277F121700793DB2 /* KeyboardView.swift */; };
+		E8EA5CE0277F129400793DB2 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CDF277F129400793DB2 /* AppData.swift */; };
+		E8EA5CE3277F130B00793DB2 /* Stastistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CE2277F130B00793DB2 /* Stastistics.swift */; };
+		E8EA5CE5277F132F00793DB2 /* WordListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CE4277F132F00793DB2 /* WordListModel.swift */; };
+		E8EA5CE7277F135B00793DB2 /* ShopItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CE6277F135B00793DB2 /* ShopItems.swift */; };
+		E8EA5CEA277F13C200793DB2 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CE9277F13C200793DB2 /* ToolbarView.swift */; };
+		E8EA5CEC277F13FF00793DB2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CEB277F13FF00793DB2 /* SettingsView.swift */; };
+		E8EA5CEE277F145700793DB2 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CED277F145700793DB2 /* StatisticsView.swift */; };
+		E8EA5CF0277F148300793DB2 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CEF277F148300793DB2 /* ShopView.swift */; };
+		E8EA5CF2277F14A500793DB2 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CF1277F14A500793DB2 /* AchievementsView.swift */; };
+		E8EA5CF4277F14D900793DB2 /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CF3277F14D900793DB2 /* HintView.swift */; };
+		E8EA5CF6277F157100793DB2 /* ResetDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CF5277F157100793DB2 /* ResetDataView.swift */; };
+		E8EA5CF8277F160200793DB2 /* DebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CF7277F160200793DB2 /* DebugOptions.swift */; };
+		E8EA5CFA277F165400793DB2 /* WordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CF9277F165400793DB2 /* WordListView.swift */; };
+		E8EA5CFD277F16F900793DB2 /* GuessWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CFC277F16F900793DB2 /* GuessWordView.swift */; };
+		E8EA5CFF277F173600793DB2 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5CFE277F173600793DB2 /* Helpers.swift */; };
+		E8EA5D01277F177F00793DB2 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5D00277F177F00793DB2 /* DebugView.swift */; };
+		E8EA5D03277F17BC00793DB2 /* Vibrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5D02277F17BC00793DB2 /* Vibrations.swift */; };
+		E8EA5D06277F181E00793DB2 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5D05277F181E00793DB2 /* WordList.swift */; };
+		E8EA5D08277F185D00793DB2 /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA5D07277F185D00793DB2 /* Lists.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +67,29 @@
 		E8EA5CC0277F0DE700793DB2 /* HangagubbeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangagubbeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EA5CC4277F0DE700793DB2 /* HangagubbeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangagubbeUITests.swift; sourceTree = "<group>"; };
 		E8EA5CC6277F0DE700793DB2 /* HangagubbeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangagubbeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8EA5CD7277F0FA200793DB2 /* PlatformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformView.swift; sourceTree = "<group>"; };
+		E8EA5CD9277F0FC600793DB2 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		E8EA5CDB277F11D800793DB2 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		E8EA5CDD277F121700793DB2 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		E8EA5CDF277F129400793DB2 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		E8EA5CE2277F130B00793DB2 /* Stastistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stastistics.swift; sourceTree = "<group>"; };
+		E8EA5CE4277F132F00793DB2 /* WordListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListModel.swift; sourceTree = "<group>"; };
+		E8EA5CE6277F135B00793DB2 /* ShopItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItems.swift; sourceTree = "<group>"; };
+		E8EA5CE9277F13C200793DB2 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		E8EA5CEB277F13FF00793DB2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E8EA5CED277F145700793DB2 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		E8EA5CEF277F148300793DB2 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		E8EA5CF1277F14A500793DB2 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		E8EA5CF3277F14D900793DB2 /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
+		E8EA5CF5277F157100793DB2 /* ResetDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetDataView.swift; sourceTree = "<group>"; };
+		E8EA5CF7277F160200793DB2 /* DebugOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOptions.swift; sourceTree = "<group>"; };
+		E8EA5CF9277F165400793DB2 /* WordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListView.swift; sourceTree = "<group>"; };
+		E8EA5CFC277F16F900793DB2 /* GuessWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWordView.swift; sourceTree = "<group>"; };
+		E8EA5CFE277F173600793DB2 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		E8EA5D00277F177F00793DB2 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		E8EA5D02277F17BC00793DB2 /* Vibrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibrations.swift; sourceTree = "<group>"; };
+		E8EA5D05277F181E00793DB2 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		E8EA5D07277F185D00793DB2 /* Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lists.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +120,7 @@
 		E8EA5C9D277F0DDC00793DB2 = {
 			isa = PBXGroup;
 			children = (
+				E8EA5CAD277F0DE500793DB2 /* Assets.xcassets */,
 				E8EA5CA8277F0DDC00793DB2 /* Hangagubbe */,
 				E8EA5CB9277F0DE700793DB2 /* HangagubbeTests */,
 				E8EA5CC3277F0DE700793DB2 /* HangagubbeUITests */,
@@ -95,8 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				E8EA5CA9277F0DDC00793DB2 /* HangagubbeApp.swift */,
-				E8EA5CAB277F0DDC00793DB2 /* ContentView.swift */,
-				E8EA5CAD277F0DE500793DB2 /* Assets.xcassets */,
+				E8EA5D04277F17E600793DB2 /* Words */,
+				E8EA5CD3277F0E6000793DB2 /* View */,
 				E8EA5CAF277F0DE600793DB2 /* Preview Content */,
 			);
 			path = Hangagubbe;
@@ -125,6 +172,76 @@
 				E8EA5CC6277F0DE700793DB2 /* HangagubbeUITestsLaunchTests.swift */,
 			);
 			path = HangagubbeUITests;
+			sourceTree = "<group>";
+		};
+		E8EA5CD3277F0E6000793DB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5CD4277F0E8600793DB2 /* Main */,
+				E8EA5CE8277F139200793DB2 /* Toolbars */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8EA5CD4277F0E8600793DB2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5CAB277F0DDC00793DB2 /* ContentView.swift */,
+				E8EA5CD7277F0FA200793DB2 /* PlatformView.swift */,
+				E8EA5CD9277F0FC600793DB2 /* GameOverView.swift */,
+				E8EA5CDB277F11D800793DB2 /* GameView.swift */,
+				E8EA5CDD277F121700793DB2 /* KeyboardView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E8EA5CE1277F12CC00793DB2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5CDF277F129400793DB2 /* AppData.swift */,
+				E8EA5CE2277F130B00793DB2 /* Stastistics.swift */,
+				E8EA5CE4277F132F00793DB2 /* WordListModel.swift */,
+				E8EA5CE6277F135B00793DB2 /* ShopItems.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E8EA5CE8277F139200793DB2 /* Toolbars */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5CE9277F13C200793DB2 /* ToolbarView.swift */,
+				E8EA5CEB277F13FF00793DB2 /* SettingsView.swift */,
+				E8EA5CED277F145700793DB2 /* StatisticsView.swift */,
+				E8EA5CEF277F148300793DB2 /* ShopView.swift */,
+				E8EA5CF1277F14A500793DB2 /* AchievementsView.swift */,
+				E8EA5CF3277F14D900793DB2 /* HintView.swift */,
+				E8EA5CF5277F157100793DB2 /* ResetDataView.swift */,
+				E8EA5CF7277F160200793DB2 /* DebugOptions.swift */,
+				E8EA5CF9277F165400793DB2 /* WordListView.swift */,
+				E8EA5CFB277F16C500793DB2 /* Operations */,
+				E8EA5CE1277F12CC00793DB2 /* Data */,
+			);
+			path = Toolbars;
+			sourceTree = "<group>";
+		};
+		E8EA5CFB277F16C500793DB2 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5CFC277F16F900793DB2 /* GuessWordView.swift */,
+				E8EA5CFE277F173600793DB2 /* Helpers.swift */,
+				E8EA5D00277F177F00793DB2 /* DebugView.swift */,
+				E8EA5D02277F17BC00793DB2 /* Vibrations.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		E8EA5D04277F17E600793DB2 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				E8EA5D05277F181E00793DB2 /* WordList.swift */,
+				E8EA5D07277F185D00793DB2 /* Lists.swift */,
+			);
+			path = Words;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +374,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EA5CEA277F13C200793DB2 /* ToolbarView.swift in Sources */,
+				E8EA5CFF277F173600793DB2 /* Helpers.swift in Sources */,
+				E8EA5CF6277F157100793DB2 /* ResetDataView.swift in Sources */,
+				E8EA5CD8277F0FA200793DB2 /* PlatformView.swift in Sources */,
+				E8EA5CF0277F148300793DB2 /* ShopView.swift in Sources */,
 				E8EA5CAC277F0DDC00793DB2 /* ContentView.swift in Sources */,
+				E8EA5D08277F185D00793DB2 /* Lists.swift in Sources */,
+				E8EA5CE3277F130B00793DB2 /* Stastistics.swift in Sources */,
+				E8EA5CFA277F165400793DB2 /* WordListView.swift in Sources */,
+				E8EA5CDA277F0FC600793DB2 /* GameOverView.swift in Sources */,
+				E8EA5CFD277F16F900793DB2 /* GuessWordView.swift in Sources */,
+				E8EA5D01277F177F00793DB2 /* DebugView.swift in Sources */,
+				E8EA5CEE277F145700793DB2 /* StatisticsView.swift in Sources */,
+				E8EA5CF4277F14D900793DB2 /* HintView.swift in Sources */,
+				E8EA5CF2277F14A500793DB2 /* AchievementsView.swift in Sources */,
+				E8EA5CDE277F121700793DB2 /* KeyboardView.swift in Sources */,
+				E8EA5CE5277F132F00793DB2 /* WordListModel.swift in Sources */,
+				E8EA5D03277F17BC00793DB2 /* Vibrations.swift in Sources */,
+				E8EA5D06277F181E00793DB2 /* WordList.swift in Sources */,
 				E8EA5CAA277F0DDC00793DB2 /* HangagubbeApp.swift in Sources */,
+				E8EA5CDC277F11D800793DB2 /* GameView.swift in Sources */,
+				E8EA5CEC277F13FF00793DB2 /* SettingsView.swift in Sources */,
+				E8EA5CE7277F135B00793DB2 /* ShopItems.swift in Sources */,
+				E8EA5CF8277F160200793DB2 /* DebugOptions.swift in Sources */,
+				E8EA5CE0277F129400793DB2 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
