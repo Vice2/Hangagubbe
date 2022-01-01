@@ -2,7 +2,7 @@
 //  WordListView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-01.
 //
 
 import SwiftUI
@@ -22,7 +22,7 @@ struct WordListView: View {
                         appData.showingSettings.toggle()
                         //openShop()
                     } label: {
-                        ListLabel(imageName: "dollarsign.circle", label: "Open Item Store")
+                        ListLabel(imageName: "dollarsign.circle", label: "Öppna shop")
                     }
                 }
             }

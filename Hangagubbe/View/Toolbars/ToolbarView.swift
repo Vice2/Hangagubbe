@@ -2,7 +2,7 @@
 //  ToolbarView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-01.
 //
 
 import SwiftUI
@@ -50,7 +50,7 @@ struct ToolbarSubView: View {
     @ObservedObject var stats: Statistics
     
     var body: some View {
-       /* Button{
+       /*Button{
            appData.showingShop.toggle()
         } label: {
             Image(systemName: "dollarsign.circle")
@@ -58,7 +58,7 @@ struct ToolbarSubView: View {
                 .offset(x: -5)
         }*/
 #if os(iOS)
-        /*.sheet(isPresented: $appData.showingShop) {
+      /*  .sheet(isPresented: $appData.showingShop) {
             ShopView(stats: stats, appData: appData)
         }
          */

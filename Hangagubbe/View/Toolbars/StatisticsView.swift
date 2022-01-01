@@ -2,7 +2,7 @@
 //  StatisticsView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-01.
 //
 
 import SwiftUI
@@ -20,19 +20,19 @@ struct StatisticsView: View {
             .tabItem {
                 VStack{
                     Image(systemName: "textformat.123")
-                    Text("Statistics")
+                    Text("Statistik")
                 }
             }
             NavigationView {
                 AchievementsView(stats: stats)
                     .navigationViewStyle(.stack)
             }
-            .tabItem {
+            /*.tabItem {
                 VStack{
                     Image(systemName: "crown")
-                    Text("Achievements")
+                    Text("Prestation")
                 }
-            }
+            }*/
         }
 #else
         ZStack {
@@ -71,31 +71,31 @@ struct StatisticsList: View {
     var body: some View {
         List {
             Section{
-                StatisticsLabel(imageName: "123.rectangle", label: "Games Played", statisticAmount: stats.defaults.integer(forKey: "GamesPlayed"))
-                StatisticsLabel(imageName: "checkmark.seal", label: "Games Won", statisticAmount: stats.defaults.integer(forKey: "GamesWon"))
-                StatisticsLabel(imageName: "xmark.diamond", label: "Games Lost", statisticAmount: stats.defaults.integer(forKey: "GamesLost"))
+                StatisticsLabel(imageName: "123.rectangle", label: "Spelade", statisticAmount: stats.defaults.integer(forKey: "GamesPlayed"))
+                StatisticsLabel(imageName: "checkmark.seal", label: "Vunnit", statisticAmount: stats.defaults.integer(forKey: "GamesWon"))
+                StatisticsLabel(imageName: "xmark.diamond", label: "Förlorat", statisticAmount: stats.defaults.integer(forKey: "GamesLost"))
             }
-            Section {
+           /* Section {
                 StatisticsLabel(imageName: "bag.circle", label: "Money Spent", statisticAmount: stats.defaults.integer(forKey: "MoneySpent"))
                 StatisticsLabel(imageName: "dollarsign.circle", label: "Money Obtained", statisticAmount: stats.defaults.integer(forKey: "MoneyObtained"))
+            }*/
+            Section {
+                StatisticsLabel(imageName: "flame", label: "Nuvarande vinstsvit", statisticAmount: stats.defaults.integer(forKey: "CurrentWinStreak"))
+                StatisticsLabel(imageName: "crown", label: "Längsta vinstsvit", statisticAmount: stats.defaults.integer(forKey: "LongestWinStreak"))
             }
             Section {
-                StatisticsLabel(imageName: "flame", label: "Current Win Streak", statisticAmount: stats.defaults.integer(forKey: "CurrentWinStreak"))
-                StatisticsLabel(imageName: "crown", label: "Longest Win Streak", statisticAmount: stats.defaults.integer(forKey: "LongestWinStreak"))
+                StatisticsLabel(imageName: "exclamationmark.circle", label: "Nuvarande förlustsvit", statisticAmount: stats.defaults.integer(forKey: "CurrentLossStreak"))
+                StatisticsLabel(imageName: "xmark.octagon", label: "Längsta förlustsvit", statisticAmount: stats.defaults.integer(forKey: "LongestLossStreak"))
             }
             Section {
-                StatisticsLabel(imageName: "exclamationmark.circle", label: "Current Loss Streak", statisticAmount: stats.defaults.integer(forKey: "CurrentLossStreak"))
-                StatisticsLabel(imageName: "xmark.octagon", label: "Longest Loss Streak", statisticAmount: stats.defaults.integer(forKey: "LongestLossStreak"))
+                StatisticsLabel(imageName: "timer", label: "Genomnsnittlig tid*", statisticAmount: 0)
+                StatisticsLabel(imageName: "clock", label: "Total spelad tid*", statisticAmount: 0)
             }
             Section {
-                StatisticsLabel(imageName: "timer", label: "Average Time*", statisticAmount: 0)
-                StatisticsLabel(imageName: "clock", label: "Total Time Played*", statisticAmount: 0)
-            }
-            Section {
-                StatisticsLabel(imageName: "keyboard", label: "Total Buttons Pressed", statisticAmount: stats.defaults.integer(forKey: "ButtonsPressed"))
+                StatisticsLabel(imageName: "keyboard", label: "Tryckta knappar", statisticAmount: stats.defaults.integer(forKey: "ButtonsPressed"))
             }
         }
-        .navigationTitle("Statistics")
+        .navigationTitle("Statistik")
     }
 }
 

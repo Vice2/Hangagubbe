@@ -2,7 +2,7 @@
 //  ResetDataView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-01.
 //
 
 import SwiftUI
@@ -20,14 +20,14 @@ struct ResetDataView: View {
                 .font(.headline)
                 .padding(5)
             List {
-                Section {
+                /*Section {
                     ListLabel(imageName: "dollarsign.circle", label: "All Money & Purchased Items")
                 }
                 Section {
                     ListLabel(imageName: "book", label: "All Collected Word Packs")
-                }
+                }*/
                 Section {
-                    ListLabel(imageName: "list.bullet.rectangle", label: "All Statistics")
+                    ListLabel(imageName: "list.bullet.rectangle", label: "All Statistik")
                 }
             }
             .padding()
@@ -48,12 +48,12 @@ struct ResetButton: View {
         Button {
             showingAlert.toggle()
         } label: {
-            Text("Confirm")
+            Text("Bekräfta")
                 .foregroundColor(.red)
         }
-        .alert("Are You Sure? This is PERMINENT", isPresented: $showingAlert) {
-            Button("Cancel", role: .cancel) {}
-            Button("Reset", role: .destructive) {
+        .alert("Är du säker? Detta är PERMANENT", isPresented: $showingAlert) {
+            Button("Avbryt", role: .cancel) {}
+            Button("Återställ", role: .destructive) {
                 stats.defaults.set(0, forKey: "ButtonsPressed")
                 stats.defaults.set(0, forKey: "GamesLost")
                 stats.defaults.set(0, forKey: "GamesWon")

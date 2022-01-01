@@ -2,7 +2,7 @@
 //  KeyboardView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-21.
 //
 
 import SwiftUI
@@ -104,24 +104,24 @@ struct KeyboardView: View {
                         guesser = true
                     }
                 } label: {
-                    ZStack{
-                       /* LetterButtonBackgroundView(color: .accentColor)
-                        LetterButtonView(letter: "", symbol: "magnifyingglass")*/		
-                    }
+                    /*ZStack{
+                       LetterButtonBackgroundView(color: .accentColor)
+                       LetterButtonView(letter: "", symbol: "magnifyingglass")
+                    }*/
                 }
                 
                 Button {
                     showHints.toggle()
                 } label: {
-                    ZStack{
-                      //  LetterButtonBackgroundView(color: .accentColor)
-                        //LetterButtonView(letter: "", symbol: "questionmark.circle")
-                    }
+                    /*ZStack{
+                      LetterButtonBackgroundView(color: .accentColor)
+                      LetterButtonView(letter: "", symbol: "questionmark.circle")
+                    }*/
                 }
-                .alert(stats.defaults.integer(forKey: "Hints") == 0 ? "You have no hints left..." : "Use a Hint? You have \(stats.defaults.integer(forKey: "Hints")) Left",isPresented: $showHints, actions: {
-                    Button("Cancel", role: .cancel) {}
+                .alert(stats.defaults.integer(forKey: "Tips") == 0 ? "Du har inga tips kvar..." : "Änvända tips? Du har \(stats.defaults.integer(forKey: "Hints")) Left",isPresented: $showHints, actions: {
+                    Button("Avbryt", role: .cancel) {}
                     if stats.defaults.integer(forKey: "Hints") >= 1 {
-                        Button("Use") {
+                        Button("Använd") {
                             print("hint used")
                             stats.subtract(key: "Hints")
                             if useHint() == true {
@@ -129,7 +129,7 @@ struct KeyboardView: View {
                             }
                         }
                     } else {
-                        Button("Purchase") {
+                        Button("Köp") {
                             showingHintShop = true
                         }
                     }
@@ -137,7 +137,7 @@ struct KeyboardView: View {
                 .sheet(isPresented: $showingHintShop) {
                     NavigationView{
                         HintView(stats: stats)
-                            .navigationTitle("Purchase Hints")
+                            .navigationTitle("Köp tips")
                     }
                 }
             }

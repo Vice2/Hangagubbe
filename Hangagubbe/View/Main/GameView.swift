@@ -2,7 +2,7 @@
 //  GameView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-02.
 //
 
 import SwiftUI
@@ -33,10 +33,12 @@ struct GameView: View {
                         if letter == " " {
                             Text(" ")
                                 .frame(width: 15)
+                                .scaledToFit()
                         } else {
                             if appData.correctLetters.contains(letter) {
                                 Text(String(letter))
                                     .font(.system(size: 35, weight: .medium))
+                                    .scaledToFit()
                             } else {
                                 RoundedRectangle(cornerRadius: 10)
                                     .frame(width: 25, height: 4)
@@ -68,14 +70,14 @@ struct GameView: View {
                 Spacer()
                 
                 Button {
-                    print("new game button pressed")
+                    print("Nytt spel knappen tryckt")
                     showingAlert = true
                 } label: {
-                    ButtonView(buttonLabel: "Give Up")
+                    ButtonView(buttonLabel: "Ge upp")
                 }
-                .alert("Are You Sure", isPresented: $showingAlert) {
-                    Button("No", role: .cancel) { print("new game cancelled") }
-                    Button("Yes") {
+                .alert("Är du säker", isPresented: $showingAlert) {
+                    Button("Nej", role: .cancel) { print("nytt spel avlutat") }
+                    Button("Ja") {
                         appData.gameOver = 1
                     }
                 }

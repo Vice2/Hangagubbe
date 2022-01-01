@@ -2,7 +2,7 @@
 //  SettingsView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-01.
 //
 
 import SwiftUI
@@ -20,11 +20,11 @@ struct SettingsView: View {
             List {
                 Section {
                     
-                    NavigationLink {
+                    /*NavigationLink {
                         WordListView(appData: appData, stats: stats)
                     } label: {
-                        ListLabel(imageName: "book", label: "Word Packs")
-                    }
+                        ListLabel(imageName: "book", label: "Ordpack")
+                    }*/
                     
 #if os(iOS)
                     if UIDevice.current.userInterfaceIdiom == .phone {
@@ -35,24 +35,24 @@ struct SettingsView: View {
 #endif
                 }
 #if DEBUG
-                Section {
+               /* Section {
                     Toggle(isOn: $debugActive) {
-                        ListLabel(imageName: "ladybug", label: "Debug Mode")
+                        ListLabel(imageName: "ladybug", label: "Debug Läge")
                     }
                         if debugActive {
                             NavigationLink {
                                 DebugOptions(appData: appData, stats: stats)
                             } label: {
-                                ListLabel(imageName: "ant", label: "Debug Options")
+                                ListLabel(imageName: "ant", label: "Debug Alternativ")
                         }
                     }
-                }
+                }*/
 #endif
                 Section {
                     Button {
                         showingSheet = true
                     } label: {
-                        ListLabel(imageColor: .red,imageName: "trash", label: "Reset All Data...")
+                        ListLabel(imageColor: .red,imageName: "trash", label: "Återställ data...")
                             .foregroundColor(.red)
                     }
                     .sheet(isPresented: $showingSheet) {
@@ -63,7 +63,7 @@ struct SettingsView: View {
                 
             }
 #if os(iOS)
-            .navigationBarTitle("Settings")
+            .navigationBarTitle("Inställningar")
 #else
             .listStyle(.inset)
 #endif

@@ -2,7 +2,7 @@
 //  GameOverView.swift
 //  Hangagubbe
 //
-//  Created by Bashar Al Bagdadi on 2021-12-31.
+//  Created by Bashar Al Bagdadi on 2021-12-02.
 //
 
 import SwiftUI
@@ -19,11 +19,11 @@ struct GameOverView: View {
                 Color.black
                     .ignoresSafeArea()
                 VStack {
-                    Text(appData.gameOver == 2 ? "Correct" : "Game Over")
-                        .font(.system(size: 45, weight: .bold))
+                    Text(appData.gameOver == 2 ? "Korrekt!!" : "Gör ett nytt försök")
+                        .font(.system(size: 40, weight: .bold))
                         .padding(.top, 50)
                     Spacer()
-                    Text(appData.gameOver == 2 ? "The Word Was" : "The Word Was...")
+                    Text(appData.gameOver == 2 ? "Ordet var" : "Ordet var...")
                         .font(.system(size: 25))
                     HStack {
                         ForEach(appData.gameLetters, id: \.self) { letter in
@@ -59,7 +59,7 @@ struct GameOverView: View {
                         appData.incorrectLetters.removeAll()
                         appData.lives = ["a","a","a","a","a","a","a","a"]
                     } label: {
-                        ButtonView(buttonLabel: "New Word")
+                        ButtonView(buttonLabel: "Nytt ord")
                             .foregroundColor(.accentColor)
                     }
                 }
